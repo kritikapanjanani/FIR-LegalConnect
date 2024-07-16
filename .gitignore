@@ -1,0 +1,9 @@
+# Ignore the myenv folder
+myenv/
+# Ignore all .vscode directories
+.vscode/
+
+# Ignore other common files
+node_modules/
+*.log
+*.env

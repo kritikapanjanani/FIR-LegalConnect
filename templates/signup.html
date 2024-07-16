@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar nav-bgcolor">
+        <div class="firstel-nav">
+          <span class="text-firstel-nav"> IPC/CRPC SECTIONS </span>
+        </div>
+        <div class="endel-nav">
+          <ul class="nav-endel-list">
+            <li class="first-list-ele"><a href="helpline.html" class="li-hov">Helpline no.</a></li>
+            <li class="second-list-ele"><a href="landingpage.html" class="li-hov">Home</a></li>
+            <li class="third-list-ele li-hov">Help</li>
+            <!-- <li class="signup"><a href="signup.html" class="li-hov">Sign up</a></li>
+            <li class="login"><a href="signin.html" class="li-hov">Login</a></li> -->
+          </ul>
+        </div>
+      </nav>
+<div class="box">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <form id="signupForm">
+      <input type="text" id="name" placeholder="Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p>Already have an account? <a href="signin.html" class="linking">Log In</a></p>
+  </div>
+</div>
+  <script src="app.js"></script>
+</body>
+</html>

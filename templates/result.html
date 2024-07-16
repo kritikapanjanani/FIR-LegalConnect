@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Response</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
+</head>
+<body>
+    <header class="container">
+        <!--navbar  -->
+        <nav class="navbar">
+            <span class="main-name">CHATBOT</span>
+        </nav>
+
+        <!-- main sections of the page -->
+        <div class="box-holder">
+
+            <!-- box first -->
+            <section class="box1 box-common ">
+                <div class="box1-content">
+                    <h1 class="box1-head">PREAMBLE</h1>
+                    <div><p>WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens:</div>
+    
+                        <div>JUSTICE, social, economic and political;</div>
+                        
+                        <div>LIBERTY of thought, expression, belief, faith and worship;</div>
+                        
+                        <div>EQUALITY of status and of opportunity;</div>
+                        
+                        <div>and to promote among them all</div>
+                        
+                        <div>FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation;</div>
+                        
+                        <div>IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.</div>
+                        </p>
+                    </div>
+    
+            </section>
+
+            <!-- box second -->
+            <section class="box2 box-common">
+                <div class="box-2-design">
+                <span class="heading-main">Ask about IPC & CRPC</span>
+                <form action="/ask" method="post" class="form-box">
+                    <input class="input-box" type="text" name="question" placeholder="Enter keywords or description of the offense"
+                        required>
+                    <button class="btn-box" type="submit">Ask</button>
+                </form>
+                <h1>Your Question</h1>
+                <p>{{ question }}</p>
+                <h1>Chatbot Response</h1>
+                <p>{{ response }}</p>
+                <!-- <a href="/">Ask another question</a></div> -->
+            </section>
+
+
+        </div>
+
+
+
+    </header>
+    
+</body>
+</html>

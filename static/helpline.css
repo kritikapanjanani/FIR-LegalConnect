@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F7F9F2;
+    padding: 20px;
+    /* color: white; */
+  }
+  
+  .container {
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .helpline-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    width: 90vw;
+    background-color: #FFEFEF;
+  }
+  
+  .helpline-table th, .helpline-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .helpline-table th {
+    background-color: #F19ED2;
+  }
+  
+  .helpline-table tr:nth-child(even) {
+    background-color: #E8C5E5;
+    color: black;
+  }
+  
+  .helpline-table tr:hover {
+    background-color: #F3D0D7;
+  }
+  
+  @media (max-width: 768px) {
+    .helpline-table th, .helpline-table td {
+      padding: 6px;
+    }
+  }
+  
