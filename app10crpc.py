@@ -95,5 +95,5 @@ def internal_error(error):
 def not_found_error(error):
     return "404 error: Page Not Found. Please check the URL.", 404
 
-if __name__ == "__main__":
-    app.run(debug=True)
+# if __name__ == "__main__":
+#     app.run(debug=True)
